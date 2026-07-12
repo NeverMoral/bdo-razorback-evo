@@ -70,9 +70,10 @@ reef_fragment:['Осколок подводного рифа',180,'Морско�
 base_storm:['+10 Белый парус',1,'Базовый парус каравеллы. Усильте до +10 перед производством штормового паруса.','https://www.ru.playblackdesert.com/Wiki/Default?wikiNo=245'],
 vacho_skilled:['Реликвия Вако: искусные переговоры',30,'Получается через продвинутый бартер и морские переговоры.','https://www.ru.playblackdesert.com/Wiki/Default?wikiNo=245'],
 seaweed_stem:['Стебель водорослей',80,'Материал морского контента для производства штормового паруса.','https://www.ru.playblackdesert.com/Wiki/Default?wikiNo=245'],
+deep_seaweed_storm:['Стебель глубоководных водорослей',80,'Тот же морской материал, что используется для фигуры черного дракона. Для штормового паруса требуется 80 шт.','https://bdocodex.com/ru/item/5829/'],
 cobalt_ingot:['Блестящий кобальтовый слиток',30,'Редкий морской материал для изготовления штормового паруса.','https://www.ru.playblackdesert.com/Wiki/Default?wikiNo=245']
 });
-const ICON={base_dragon:'old_prow',glowing_concretion:'radiant_pearl',improved_plywood:'plywood',deep_seaweed_gear:'seaweed',ocean_dark_iron:'graphite',base_armor:'old_hull',pure_pearl:'radiant_pearl',moon_plywood:'moon_linen',base_meyna:'old_cannon',wave_timber:'dark_timber',reef_fragment:'tear',base_storm:'old_sail',seaweed_stem:'seaweed',cobalt_ingot:'brilliant_salt'};
+const ICON={deep_seaweed_storm:'deep_seaweed_gear'};
 const icon=id=>A+(ICON[id]||id)+'.webp';
 const crafts={
 caravel:{title:'Каравелла Эферии',route:'Улучшенная бригантина Эферии → Каравелла',ids:stages[0][3],kind:'ship'},
@@ -80,7 +81,7 @@ advance:{title:'Галеон Эферии: Прогресс',route:'Караве
 gear_dragon:{title:D.dragon[0],route:'Обвес для основного крафта галеона',ids:['base_dragon','glowing_concretion','improved_plywood','deep_seaweed_gear','ocean_dark_iron'],kind:'gear'},
 gear_armor:{title:D.armor[0],route:'Обвес для основного крафта галеона',ids:['base_armor','pure_pearl','vacho_basic','vacho_battle','moon_plywood'],kind:'gear'},
 gear_meyna:{title:D.meyna[0],route:'Обвес для основного крафта галеона',ids:['base_meyna','wave_timber','vacho_battle','moon_plywood','reef_fragment'],kind:'gear'},
-gear_storm:{title:D.storm[0],route:'Обвес для основного крафта галеона',ids:['base_storm','glowing_concretion','vacho_skilled','seaweed_stem','cobalt_ingot'],kind:'gear'},
+gear_storm:{title:D.storm[0],route:'Обвес для основного крафта галеона',ids:['base_storm','glowing_concretion','vacho_skilled','deep_seaweed_storm','cobalt_ingot'],kind:'gear'},
 chiro_figure_stage:{title:'Чиро: Фигура',route:'Синий обвес галеона «Прогресс»',ids:stages[2][3],kind:'chiro'},
 chiro_sail_stage:{title:'Чиро: Парус',route:'Синий обвес галеона «Прогресс»',ids:stages[3][3],kind:'chiro'},
 chiro_cannon_stage:{title:'Чиро: Пушка',route:'Синий обвес галеона «Прогресс»',ids:stages[4][3],kind:'chiro'},
